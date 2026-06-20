@@ -3,6 +3,17 @@ variable "env_name" {
   default = null
 }
 
+variable "network_id" {
+  type = string
+}
+
+variable "subnet_zones" {
+  type = list(string)
+}
+
+variable "subnet_ids" {
+  type = list(string)
+}
 variable "instance_name" {
   type    = string
   default = "mia_vm"
